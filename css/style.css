@@ -1,0 +1,932 @@
+*{
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+/* media query/ siden bliver responsiv */
+@media (max-width: 768px) {
+}
+
+body {
+    font-family: 'Source Code Pro', monospace;
+}
+
+/* navbar farve */
+nav {
+    background-color: #E3DCD4;
+}
+
+nav{
+    height: 250px;
+    width: 100%;
+    background-color: #E3DCD4;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo img{
+
+    line-height: 20px;
+    padding: 0 30px;
+    max-height: 140px; 
+}
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: #C6BFB9;
+    border-radius: 5px;
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #C6BFB9;
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 100px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu li {
+    margin: 5px 0;
+}
+
+.dropdown-menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    padding: 5px 0;
+}
+
+nav ul {
+    float: none;
+    margin-right: 20px;
+}
+/*styling af navbar li */
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+}
+/* styling af link inde i navbar */
+nav ul li a{
+    color: black;
+    font-size: 17px ;
+    text-transform: uppercase;
+    /* border-radius: 3px; */
+    padding: 7px 13px;
+    text-decoration: none;
+}
+
+a ul:active, a:hover {
+    background-color: #C6BFB9;
+    transition: .5s;
+}
+/* navbar styling slut */
+
+
+.velkomst_vid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;
+    height: 410px;
+    
+}
+
+.video-container {
+    width: 100%;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto
+}
+.controls {
+    width: 100%;
+    height: 8.0971659919028340080971659919028%; /* of figure's height */
+    position: relative;
+}
+
+.controls[data-state="hidden"] {
+    display: none;
+}
+  
+.controls[data-state="visible"] {
+    display: block;
+}
+
+
+
+
+
+/* nyheder css begynder */
+.background-color{
+    background-color: #FFCFD2;
+}
+/* titelen: nyhed styles */
+#nyhed-titel{
+  font-size: 30px;
+  margin-left: 20px;
+  color: black;
+  padding: 20px;
+}
+
+
+/* billderne + tekst indrammes */
+.boxes {
+    border: 20px #FFCFD2 solid;
+    padding-inline: 20px;
+    padding-bottom: 60px;
+    padding-top: 20px;
+    margin: auto;
+    background-color:#FFAFC5;
+}
+
+
+/* styling af billede tekst */
+figcaption {
+    text-align: justify;
+    padding: 20px;
+    margin: 0;
+    width: 200;
+}
+
+.background-color-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+/* billeder og tekst placeres ved siden af hinanden + bulletpoints fjernes */
+.nyheder-images {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.nyheder-images ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: baseline;
+    list-style-type: none;
+    padding: 30px;
+}
+
+
+.boxes img {
+    max-width: 100%; 
+}
+
+.boxes figcaption {
+    margin-top: 10px; 
+
+}
+
+/* styling af billeder, skygge + størrelse */
+.nyheder-images img {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    width: 200px;
+    height: 180px;
+    max-width: 100%;
+    margin: 0 10px;
+}
+.nyheder-images ul li {
+    display: flex;
+}
+
+.nyheder-images p {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+
+/* formål styles */
+.background-color-d{
+background-color: #FFAFC5;
+display: block;
+width: 100%;
+height: 100%;
+margin-top: -30px;
+margin-bottom: -30px;
+padding-bottom: 30px;
+padding-right: 40px;
+}
+
+#formal-titel{
+    font-size: 30px;
+    margin-left: 20px;
+    color: black;
+    padding: 20px;
+}
+
+
+#formaal{
+margin-block: 30px;
+width: auto;
+display: block;
+}
+
+#box{
+    background-color: #FFCFD2;
+    padding: 30px;
+    width: 100%;
+    padding-bottom: 153px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    padding-right: 30px;
+}
+
+#tekst-1{
+    font-size: 20px; /* Adjust the font size as needed */
+    line-height: 1; /* Set a smaller line height */
+    letter-spacing: -0.5px; /* Adjust letter spacing to make it more compact */
+}
+
+/* Css ettiske produkter begynder */
+#Brands-titel{
+  font-size: 30px;
+  margin-left: 20px;
+  color: black;
+  padding: 20px;
+
+}
+
+.background-color-e{
+    background-color: #FFCFD2;
+    padding: 50;
+    
+}
+
+/* pile styles */
+.brands-first {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.brands-first i {
+    font-size: 80px;
+    color: black;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+/* billeder styles */
+.brands-images{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px; 
+}
+
+.brands-images img .brand-logo{
+    width: 200px;
+    height: 180px;
+    max-width: 100%;
+    margin: 0 16px;
+    list-style-type: none;
+}
+
+.brands-images ul{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: baseline;
+    list-style-type: none;
+    padding: 30px;
+}
+
+.brand-images ul li {
+    display: flex;
+}
+
+/* mellemrum mellem billeder */
+.brands-images-first img {
+    margin: 0 10px;
+    max-width: 200px;
+    margin-right: 20px;
+}
+.brands-images-first ul {
+    margin: 20px 0; 
+    padding: 90px;
+}
+
+.brands-images img, .brands-first i {
+    margin: 0 46px;
+
+}
+
+.read-more{
+    position: absolute;
+    bottom: 0; 
+    background-color: #92CC92; 
+    color: black; 
+    width: 55%; 
+    padding: 6px;
+    font-size: 16px;
+    text-align: center;
+    display: none; 
+}
+
+.brands-images li {
+    position: relative;
+}
+
+.brands-images li:hover .read-more {
+    display: block; 
+}
+
+/* png styling */
+.rating-png{
+    width: 20%;
+    display: block;
+    margin: 10px auto;
+    height: auto;
+}
+
+.brands-images img, .brands-first i {
+    margin: 0 5px; 
+}
+
+/* judsterer padding i brands-first class */
+.brands-first {
+    padding-bottom: 5%; 
+}
+
+/* bærdygtigt tøj css begynder */
+.background-color-f{
+    background-color: #E3DCD4;
+    
+}
+
+h2 {
+    font-size: 30px;
+    margin-left: 20px;
+    color: black;
+    padding: 30px;
+    text-decoration: none;
+}
+/* gøre link usynlig */
+a {
+    text-decoration: none;
+}
+
+.maerker-first {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+
+/* mellemrum mellem billeder */
+.maerker-images-first img {
+    margin: 0 10px;
+    max-width: 200px;
+    margin-right: 20px;
+}
+.maerker-images-first ul {
+    margin: 20px 0; 
+    padding: 90px;
+}
+
+.maerker-images img, .maerker-first i{
+    margin: 0 46px;
+}
+    
+
+/* styling af pile */
+.fa-solid, .fas {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 80px;
+    padding: 40px;
+}
+
+.maerkeder-first i {
+    font-size: 80px;
+    color: black;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+#left-icon-first,
+#right-icon-first {
+    font-size: 80px;
+    color: black;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.maerker-images-first {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.brand-container {
+    position: relative;
+    margin-bottom: 20px;
+    margin-right: 20px; 
+}
+
+.brand-container img {
+    max-width: 100%;
+    width: 200px; 
+    height: auto;
+}
+
+.secondhand-images-first img {
+    margin: 0 10px;
+    max-width: 200px; 
+}
+
+.rating-png {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    margin-top: 50px;
+}
+
+
+
+/* secondhand css begynder */
+.background-color-g {
+    background-color: #92CC92;
+}
+
+.brand-container {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.brand-container img {
+    max-width: 100%;
+}
+
+
+/* titel */
+h2 {
+    font-size: 30px;
+    margin-left: 20px;
+    color: black;
+    padding: 30px;
+}
+
+.gallery-first {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+/* mellemrum mellem billeder */
+.gallery-images-first img {
+    margin: 0 10px;
+    max-width: 200px;
+    margin-right: 20px;
+}
+.gallery-images-first ul {
+    margin: 20px 0; 
+    padding: 90px;
+}
+
+.gallery-images img, .gallery-first i{
+    margin: 0 46px;
+}
+    
+
+/* styling af pile */
+.fa-solid, .fas {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 80px;
+    padding: 40px;
+}
+
+.secondhand-images-first img {
+    margin: 0 10px;
+    max-width: 200px; 
+}
+
+/* nær dig styles */
+background-color-3{
+    background-color: #92CC92;
+    width: 100%;
+    display: block;
+}
+
+#event-titel{
+  font-size: 30px;
+  color: black;
+  padding: 20px;
+  background-color: #92CC92;
+}
+
+.beige{
+    border: 20px  #92CC92 solid;
+    padding-inline: 20px;
+    padding-bottom: 60px;
+    padding-top: 20px;
+    margin: auto;
+    background-color: #E3DCD4;
+}
+
+
+background-color-beige{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+background-color-beige ul{
+    display: flex;
+}
+
+/* billeder og tekst placeres ved siden af hinanden + bulletpoints fjernes */
+.event-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #92CC92;
+}
+
+.event-images ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: baseline;
+    list-style-type: none;
+    padding: 30px;
+    padding-bottom: 70px ;
+}
+
+#beige img {
+    max-width: 100%; 
+}
+
+#beige figcaption {
+    margin-top: 10px; 
+
+}
+.color-beige{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.color-beige img{
+    align-items: center;
+    width: 55%;
+    display: block;
+    margin: 0 auto;
+}
+
+.color-beige figcaption {
+ margin-top: 10px;
+}
+
+/* see mere knap styling */
+.se-mere-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFAFC5; /* change to your desired color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px; /* optional for rounded corners */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.se-mere-button:hover {
+    background-color: #E3DCD4; 
+}
+
+.button-container {
+    position: relative;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -150px;
+}
+.button-container .btn-holder {
+    justify-content: flex-end;
+    display: flex;
+}
+
+/* styling af location */
+.background-color{
+    background-color: #FFCFD2;
+}
+
+#near{
+    text-align: center;
+    padding-top: 30px;
+}
+
+/* styling af søgebar */
+.soegebar{
+    align-items: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    padding-bottom: 10px;
+}
+form, p {
+    margin: 0 auto;
+    display: table;
+}
+
+/* Style the search input */
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color:#FFAFC5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #E3DCD4;
+}
+
+
+/* styling af by liste */
+h3{
+    padding: 40px;
+    font-size: 25px;
+}
+
+.by-list li{
+    list-style-type: none;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+.by-list ul li i {
+    margin-right: 5px;
+    line-height: 0;
+}
+
+/* styling af link */
+a {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+/* styling a pile */
+.fa-chevron-circle-right:before, .fa-circle-chevron-right:before {
+    content: "\f138";
+    font-size: 30px;
+}
+
+.fa-circle-chevron-right .by-list li{
+    padding: 10px;
+}
+
+/* stylig af artikel-e */
+.article-container {
+    
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    
+}
+
+.artikel-header {
+    text-align: center;
+}
+
+.artikel-header h1 {
+    margin-top: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.article-body {
+    flex: 1; 
+    margin-top: 0; 
+   
+}
+
+
+.artikel-image {
+    width: 30%;
+    margin-bottom: 20px;
+    float: left;
+    max-width: 300px;
+}
+
+.artikel-image-2{
+    max-width: 300px;
+    width: 30%;
+    float: right
+    
+}
+
+p {
+   font-size: 16px;
+   padding-left: 40px;
+   padding-right: 40px;
+   margin-bottom: 30px;
+}
+
+/* artikel-t styles */
+.article-t-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+    padding-left: 40px;
+}
+
+.text-container {
+    flex: 2;
+    padding-left: 370px;
+}
+
+.text-container li{
+    list-style-type: none;
+}
+.text-container h2 {
+    margin-top: 0;
+}
+
+img.sko {
+    width: 100%;
+    max-width: 340px;
+}
+
+/* artikel-n styles */
+.green-box {
+    background-color: #92CC92;
+    padding: 20px;  
+    display: flex;
+    align-items: center;  
+}
+
+#lokalt{
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+.images-container {
+    display: block;  
+    margin-right: 20px;  
+}
+
+img.close-to-you {
+    display: block;
+    width: 100%; 
+    margin-bottom: 10px;  
+    max-width: 200px;
+}
+
+img.close-to-you:last-child {
+    margin-bottom: 30px;  
+}
+
+.tekst-content {
+    flex: 1;  
+    text-align: justify;
+    font-size: 20px;
+    color: black;  
+    padding-left: 30px;
+}
+
+
+/* footer styles */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #E3DCD4;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+footer a {
+    margin: 10px;
+}
+
+footer p {
+    padding: 10px;
+    margin-bottom: 20px;
+    margin: 10px;
+}
+
+/* bulletpoints fjernes */
+.kontakt-info {
+    list-style-type: none;
+}
+
+#kontakt{
+    font-size: 20px;
+    font-style: bold; 
+    padding-bottom: 10px;
+}
+
+/* mellemrum på  kontakt info */
+.kontakt-info li {
+    padding: 10px;
+}
+
+/* punkter i første colonne fjernes */
+.icon-container {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.icon-container ul li i {
+    font-size: 40px;
+    color: black;
+}
+.social-icons {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+}
+
+/* punkter i anden colonne fjernes */
+.icon-container ul {
+    list-style-type: none;
+}
+
+
+
+
+
+

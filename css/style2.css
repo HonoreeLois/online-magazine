@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+}
+
+body {
+    font-family: 'Source Code Pro', monospace;
+    background-color: #FBF7F4;
+}
+
+/* navbar farve */
+nav {
+    background-color: #E3DCD4;
+}
+
+nav{
+    height: 250px;
+    width: 100%;
+    background-color: #E3DCD4;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+
+    line-height: 20px;
+    padding: 0 30px;
+    max-height: 140px; 
+}
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: #C6BFB9;
+    border-radius: 5px;
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #C6BFB9;
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 100px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu li {
+    margin: 5px 0;
+}
+
+.dropdown-menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    padding: 5px 0;
+}
+
+nav ul {
+    float: none;
+    margin-right: 20px;
+}
+
+/*styling af navbar li */
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+}
+
+/* styling af link inde i navbar */
+nav ul li a{
+    color: black;
+    font-size: 17px ;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    text-decoration: none;
+}
+
+a ul:active, a:hover {
+    background-color: #C6BFB9;
+    transition: .5s;
+}
+/* navbar styling slut */
+
+h1{
+  font-size: 30px;
+  color: black;
+  padding: 20px;
+  text-align: justify;
+  margin: 0;
+}
+
+/* styling af text og billeder */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px; 
+}
+
+.container.opposite .images {
+    order: -1; 
+}
+
+.text {
+    flex: 1;
+    text-align: justify;
+    padding: 20px;
+    margin: 0;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.text p {
+    font-size: 18px; 
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+}
+
+.figure-text {
+    font-size: 14px; 
+    line-height: 1.2; 
+    margin: 5px 0; 
+}
+
+.images img {
+    max-width: 100%; 
+    margin: 0 5px; 
+}
+
+.images{
+ width: 35%;
+ padding: 20px;
+}
+
+.container {
+    position: relative;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #E3DCD4;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+footer a {
+    margin: 10px;
+}
+
+footer p {
+    padding: 10px;
+    margin-bottom: 20px;
+    margin: 10px;
+}
+
+/* bulletpoints fjernes */
+.kontakt-info {
+    list-style-type: none;
+}
+
+#kontakt{
+    font-size: 20px;
+    font-style: bold; 
+    padding-bottom: 10px;
+}
+
+a {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+/* mellemrum på  kontakt info */
+.kontakt-info li {
+    padding: 10px;
+}
+
+/* punkter i første colonne fjernes */
+.icon-container {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.icon-container ul li i {
+    font-size: 40px;
+    color: black;
+}
+.social-icons {
+    display: flex;
+    flex-direction: column;   
+}
+
+/* punkter i anden colonne fjernes */
+.icon-container ul {
+    list-style-type: none;
+}
+

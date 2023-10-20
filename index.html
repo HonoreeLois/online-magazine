@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThreadEco</title>
+    <link rel="icon" href="media/favicon.ico" type="image/x-icon" />
+    <!-- linker til font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+    <!-- linker til css -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<header>
+        <nav>
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="media/threadeco_logo.png" alt="ThreadEco Logo">
+                    </a>
+                </div>
+
+                <ul class="menu">
+                    <li class="dropdown">
+                        <a href="index.html">Home</a>
+                        <!-- Dropdown menu for "Home" -->
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="home1.html">Nyheder</a></li>
+                            </ul>
+                        </div>
+                        
+                    </li>
+                    <li class="dropdown">
+                        <a href="tips.html" class="dropdown-toggle">Tips & Guides</a>
+                        <!-- Dropdown menu for "Tips" -->
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="artikel-t.html">Upcycling</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="naer_dig.html" class="dropdown-toggle">Nær dig</a>
+                        <!-- Dropdown menu for "Nær dig" -->
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="artikel-n.html">Artikel</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="etiske_produkter.html" class="dropdown-toggle">Etiske produkter</a>
+                        <!-- Dropdown menu for "Etiske produkter" -->
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="artikel-e.html">Fast Fashion</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    <!-- Slut Nav -->
+    </header>
+    <article>
+    <div class="video-containder">
+    <!-- <video controls>
+        <source src="media/treadvideo.mp4" type="video/mp4">
+        this browser does not display the video tag.
+    </video> -->
+
+    <!-- <video>
+        <source src="media/treadvideo.mp4" type="video/mp4">
+        this browser does nt display the video tag.
+    </video> -->
+
+
+    <!-- loop autoplay>
+        <source src="media/treadvideo.mp4" type="video/mp4">
+        <source src=""media/treadvideo.mp4" type="video/ogg">
+        this browser does not support video tag.
+    </video> -->
+        <video class="velkomst_vid" loop autoplay muted>
+            <source src="media/threadvideo.mp4" type="video/mp4">
+        </video>
+    </div>
+    </article>
+
+    <article>
+     <div class="background-color">
+      <h2 id="nyhed-titel">NYHEDER</h2>
+    <!-- linker til billder + tekst -->
+      <div class="nyheder-images">
+        <div class="background-color-images">
+        <ul>
+        
+            <!-- hvert billede og tekst inrammes med figure tag -->
+            <li>
+                <figure class="boxes">
+                <img src="media/beigeclothes.jpg" alt="tøj på bøjle">
+                <figcaption>
+                    <p class="pink-text">Bæredygtige Modekollektioner: Det Nyeste Inden for Grøn Stil"</p>
+                </figcaption>
+              </figure>
+
+             <figure class="boxes">
+                <img src="media/jeancut.jpg" alt="klippet jeans">
+                <figcaption>
+                    <p class="pink-text">Upcycling og Redesign: Kreative Løsninger til Gamle Tøj"</p>
+                </figcaption>
+            </figure> 
+           </li>
+            
+            <li>
+                <figure class="boxes">
+                    <img src="media/shoe.jpg" alt="sko og smykker">
+                 <figcaption>
+                    <p class="pink-text">"Grønne Accessories og Sko: Bæredygtighed i Detaljerne"</p>
+                 </figcaption>
+                </figure>
+            </li>
+        </ul>
+        </div>
+      </div>
+     </div>  
+    </article>
+
+    <article id="formaal">
+     <div class="background-color-d">
+      <h3 id="formal-titel">Formål</h3>
+    <!-- linker til billder + tekst -->
+      <div class="formal-images">
+        <div class="background-color-2">
+        <figure id="box">
+            <!-- hvert billede og tekst inrammes med figure tag -->
+            <p id="tekst-1">
+                Her hos ThreadEco elsker vi alt mode og tøj ligesom mange andre. 
+                Men desværre er alt mode ikke godt. Derfor Skabte vi ThreadEco. 
+                Vi tror på at mode ikke kun handler om stil, men også om at træffe bevidste valg, 
+                der har en positiv indvirkning på vores planet og vores samfund. 
+                ThreadEco er dedikeret til at inspirere og vejlede dig til at omfavne 
+                en mere bæredygtig og ansvarlig tilgang til mode.<br>
+                
+                <br>Tak fordi du er her med os på rejsen mod en mere bæredygtig og modebevidst fremtid. 
+                Sammen kan vi gøre en forskel!  
+            </p>
+            
+        </figure> 
+        </div>
+       </div>
+      </div> 
+    </article>
+    <!-- her laves footeren -->
+    <footer>
+        <!-- jeg bruger paragraf og lave mellemrum mellem hver tekst -->
+        <ul class="kontakt-info">
+            <li><p id="kontakt">Kontakt os</p></li>
+            <li><a href="http://index.html/404.html">info@ThreadEco.dk</a></li>
+            <li><a href="http://index.html/404.html">Om os</a></li>
+            <li><a href="http://index.html/404.html">Cookies</a></li>
+            <li><a href="http://index.html/404.html">FAQ</a></li>
+        </ul>
+        <!-- her laves medie iconerne -->
+    
+        <div class="social-icons">
+            <div>
+                <p>SOCIAL<br></p>
+            </div>
+            <div class="icon-container">
+                <ul>
+                    <li> <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+    
+                </ul>
+                <ul>
+                    <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.tiktok.com"><i class="fab fa-tiktok"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
